@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Akuntansi dan Keuangan Lembaga</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #56ccf2, #2f80ed);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2f80ed;
+    }
+
+    .question {
+      display: none;
+      animation: fade 0.4s ease-in-out;
+    }
+
+    .question.active {
+      display: block;
+    }
+
+    label {
+      display: block;
+      padding: 10px 15px;
+      margin: 8px 0;
+      background: #f3f9ff;
+      border: 1px solid #cde1f9;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    label:hover {
+      background: #e3f0ff;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .wrong-list {
+      color: red;
+      margin-top: 10px;
+    }
+
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Akuntansi dan Keuangan Lembaga</h1>
+
+    <!-- Soal-soalnya -->
+    <div class="question active" data-question="1">
+      <p>Berikut ini yang bukan merupakan bagian dari Persamaan Dasar Akuntansi adalah</p>
+      <label><input type="radio" name="q1" value="a"> A. Pendapatan</label>
+      <label><input type="radio" name="q1" value="b"> B. Beban</label>
+      <label><input type="radio" name="q1" value="c"> C. Laba</label>
+      <label><input type="radio" name="q1" value="d"> D. Harta</label>
+    </div>
+
+    <div class="question" data-question="2">
+      <p>Sebuah perusahaan membeli peralatan senilai Rp5.000.000 secara kredit. Transaksi ini akan memengaruhi akun...</p>
+      <label><input type="radio" name="q2" value="a"> A. Kas dan Beban Peralatan</label>
+      <label><input type="radio" name="q2" value="b"> B. Peralatan dan Utang Usaha</label>
+      <label><input type="radio" name="q2" value="c"> C. Kas dan Modal Pemilik</label>
+      <label><input type="radio" name="q2" value="d"> D. Peralatan dan Pendapatan</label>
+    </div>
+
+    <div class="question" data-question="3">
+      <p>Akun yang berfungsi untuk mencatat pengambilan uang perusahaan oleh pemilik untuk keperluan pribadi disebut...</p>
+      <label><input type="radio" name="q3" value="a"> A. Modal</label>
+      <label><input type="radio" name="q3" value="b"> B. Beban Lain-lain</label>
+      <label><input type="radio" name="q3" value="c"> C. Privat</label>
+      <label><input type="radio" name="q3" value="d"> D. Prive</label>
+    </div>
+
+    <div class="question" data-question="4">
+      <p>Jika sebuah perusahaan membayar sewa gedung sebesar Rp2.000.000, maka akan memengaruhi akun...</p>
+      <label><input type="radio" name="q4" value="a"> A. Harta dan Utang</label>
+      <label><input type="radio" name="q4" value="b"> B. Beban dan Kas</label>
+      <label><input type="radio" name="q4" value="c"> C. Modal dan Pendapatan</label>
+      <label><input type="radio" name="q4" value="d"> D. Kas dan Modal</label>
+    </div>
+
+    <div class="question" data-question="5">
+      <p>Laporan keuangan yang menyajikan posisi keuangan perusahaan, yaitu harta, utang, dan modal pada periode tertentu disebut...</p>
+      <label><input type="radio" name="q5" value="a"> A. Laporan Laba Rugi</label>
+      <label><input type="radio" name="q5" value="b"> B. Laporan Perubahan Modal</label>
+      <label><input type="radio" name="q5" value="c"> C. Jurnal Umum</label>
+      <label><input type="radio" name="q5" value="d"> D. Neraca</label>
+    </div>
+
+    <div class="question" data-question="6">
+      <p>Berikut ini yang merupakan contoh dari akun harta lancar adalah...</p>
+      <label><input type="radio" name="q6" value="a"> A. Gedung</label>
+      <label><input type="radio" name="q6" value="b"> B. Piutang Usaha</label>
+      <label><input type="radio" name="q6" value="c"> C. Utang Bank</label>
+      <label><input type="radio" name="q6" value="d"> D. Modal Pemilik</label>
+    </div>
+
+    <div class="question" data-question="7">
+      <p>Siklus akuntansi diawali dengan tahapan...</p>
+      <label><input type="radio" name="q7" value="a"> A. Jurnal Umum</label>
+      <label><input type="radio" name="q7" value="b"> B. Neraca Saldo</label>
+      <label><input type="radio" name="q7" value="c"> C. Identifikasi dan Analisis Transaksi</label>
+      <label><input type="radio" name="q7" value="d"> D. Penyusunan Laporan Keuangan</label>
+    </div>
+
+    <div class="question" data-question="8">
+      <p>Ketika pendapatan diterima di muka, maka akun yang akan bertambah adalah...</p>
+      <label><input type="radio" name="q8" value="a"> A. Kas dan Pendapatan Diterima di Muka</label>
+      <label><input type="radio" name="q8" value="b"> B. Pendapatan Jasa dan Kas</label>
+      <label><input type="radio" name="q8" value="c"> C. Pendapatan Diterima di Muka dan Piutang</label>
+      <label><input type="radio" name="q8" value="d"> D. Kas dan Pendapatan Jasa</label>
+    </div>
+
+    <div class="question" data-question="9">
+      <p>ika total harta adalah Rp10.000.000 dan utang adalah Rp3.000.000, maka besarnya modal berdasarkan Persamaan Dasar Akuntansi adalah...</p>
+      <label><input type="radio" name="q9" value="a"> A. Rp13.000.000</label>
+      <label><input type="radio" name="q9" value="b"> B. Rp7.000.000</label>
+      <label><input type="radio" name="q9" value="c"> C. Rp10.000.000</label>
+      <label><input type="radio" name="q9" value="d"> D. Rp3.000.000</label>
+    </div>
+
+    <div class="question" data-question="10">
+      <p>Dalam jurnal umum, 'debit' dan 'kredit' digunakan untuk...</p>
+      <label><input type="radio" name="q10" value="a"> A. Mencatat hanya saldo akhir</label>
+      <label><input type="radio" name="q10" value="b"> B. Mencatat kenaikan dan penurunan saldo</label>
+      <label><input type="radio" name="q10" value="c"> C. Mencatat hanya akun pendapatan dan beban</label>
+      <label><input type="radio" name="q10" value="d"> D. Menentukan laba atau rugi perusahaan</label>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+ <script>
+  const answers = {
+    q1: 'c', q2: 'b', q3: 'd', q4: 'b', q5: 'd',
+    q6: 'b', q7: 'c', q8: 'a', q9: 'b', q10: 'b'
+  };
+
+  const container = document.querySelector('.container');
+  const questions = Array.from(document.querySelectorAll('.question'));
+  const userAnswers = {};
+  const wrong = [];
+
+  // Fungsi untuk mengacak array (Fisher-Yates Shuffle)
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  // Acak dan tampilkan ulang urutan soalnya
+  const shuffled = shuffle(questions);
+  shuffled.forEach((q, i) => {
+    q.classList.remove('active');
+    container.appendChild(q);
+  });
+  shuffled[0].classList.add('active'); // hanya soal pertama aktif
+
+  // Logika navigasi soal dan penilaian
+  shuffled.forEach((q, index) => {
+    const inputs = q.querySelectorAll('input[type=radio]');
+    inputs.forEach(input => {
+      input.addEventListener('change', () => {
+        const name = input.name;
+        userAnswers[name] = input.value;
+        q.classList.remove('active');
+        if (index + 1 < shuffled.length) {
+          shuffled[index + 1].classList.add('active');
+        } else {
+          showResult();
+        }
+      });
+    });
+  });
+
+  function showResult() {
+    let score = 0;
+    for (let i = 1; i <= 10; i++) {
+      const key = 'q' + i;
+      if (userAnswers[key] === answers[key]) {
+        score++;
+      } else {
+        wrong.push(i);
+      }
+    }
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `<p>Nilai Kamu: ${score * 10} / 100</p>`;
+    if (wrong.length) {
+  resultDiv.innerHTML += `<p class="wrong-list">Jumlah soal yang salah: ${wrong.length}</p>`;
+} else {
+  resultDiv.innerHTML += `<p>Semua jawaban benar! Mantap gesss!</p>`;
+}
+
+  }
+</script>
+</body>
+</html>
